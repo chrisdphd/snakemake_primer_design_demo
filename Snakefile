@@ -10,7 +10,7 @@ rule generate_fwd:
 	output:
 		"output/{sample}.primers_fwd"
 	shell:
-		"""/usr/bin/python /Users/cdavie/bin/scripts-python/DNA_substringer_20210327_pub.py -f {input} > {output}"""
+		"""./DNA_substringer_20210327.py -f {input} > {output}"""
 
 
 rule generate_rev:
@@ -19,7 +19,7 @@ rule generate_rev:
         output:
                 "output/{sample}.primers_rev"
         shell:
-                """/usr/bin/python /Users/cdavie/bin/scripts-python/DNA_substringer_20210327_pub.py -f {input} -r > {output}"""
+                """./DNA_substringer_20210327.py -f {input} -r > {output}"""
 
 
 #rule collate:
