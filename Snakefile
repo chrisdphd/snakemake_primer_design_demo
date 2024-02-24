@@ -10,7 +10,7 @@ rule generate_fwd:
 	output:
 		"output/{sample}.primers_fwd"
 	shell:
-		"""./DNA_substringer_20240223.py -f {input} > {output}"""
+		"""./DNA_substringer_20210327.py -f {input} > {output}"""
 
 
 rule generate_rev:
